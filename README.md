@@ -1,6 +1,6 @@
 # ICRAT 2024 ADS-B Tutorial
 
-This repository contains a set of notebooks for understanding and decoding ADS-B messages using `pyModeS` library.
+This repository contains a set of notebooks for the OpenAP Tutorial.
 
 You may clone the repository and run the notebooks locally, or use Google Colab to run the notebooks online.
 
@@ -10,30 +10,38 @@ To run the notebooks on Google Colab, click the "Open in Colab" button below eac
 
 If you want to run the notebooks locally, you need to install the following library:
 
-- `pyModeS`: https://github.com/junzis/pyModeS
+- `openap`
+- `openap-top`
+- `openap-polymer`
 
 You can install the library using pip:
 
 ```bash
-pip install pyModeS
+pip install --upgrade openap
+pip install --upgrade openap-top
+pip install --upgrade git+https://github.com/junzis/openap-polymer
+
+# Optional dependencies for wind data
+pip install cfgrib
+pip install ecmwflibs
 ```
 
 # Tutorials
 
-## 1_sample_messages.ipynb
+## 1. Fuel and emission estimations
 
-Introducing basic ADS-B message formats and how to decode them.
+This tutorial provides examples of estimating fuel and emissions using the OpenAP library.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junzis/tutorial-icrat24-adsb/blob/main/1_sample_messages.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junzis/tutorial-icrat24-openap/blob/master/1_openap_fuel_and_emissions.ipynb)
 
-## 2_explore_more_types.ipynb
+## 2. Fuel calculation with reduced order model
 
-This tutorial provides examples of decoding more ADS-B and Mode S message types.
+This tutorial provides examples of calculating fuel using the reduced order model `opeanap-polymer`.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junzis/tutorial-icrat24-adsb/blob/main/2_explore_more_types.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junzis/tutorial-icrat24-openap/blob/master/2_openap_reduced_order_model.ipynb)
 
-## 3_decode_many.ipynb
+## 3. Trajectory optimization
 
-This tutorial provides examples of decoding many ADS-B messages from a file.
+This tutorial provides examples of trajectory optimization using the `openap-top` library.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junzis/tutorial-icrat24-adsb/blob/main/3_decode_many.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/junzis/tutorial-icrat24-openap/blob/master/3_openap_trajectory_optimization.ipynb)
