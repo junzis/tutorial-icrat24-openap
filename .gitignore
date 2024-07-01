@@ -1,5 +1,6 @@
 data/*.grib*
 data/*orig*
+local/*
 
 .DS_Store
 
