@@ -1,4 +1,4 @@
-# ICRAT 2024 ADS-B Tutorial
+# ICRAT 2024 OpenAP Tutorial
 
 This repository contains a set of notebooks for the OpenAP Tutorial.
 
@@ -21,7 +21,7 @@ pip install --upgrade openap
 pip install --upgrade openap-top
 pip install --upgrade git+https://github.com/junzis/openap-polymer
 
-# Optional dependencies for wind data
+# Optional dependencies for wind data in grib format
 pip install cfgrib
 pip install ecmwflibs
 ```
